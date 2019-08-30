@@ -7,7 +7,7 @@
     - Consomem um único de      |   - podem consumir mais de um ciclo
     processamento               |   de processamento
     - Baixo número              |   - Alto número
-    - Simplese padronizadas     |   - mais complexos
+    - Simples padronizadas     |   - mais complexos
 
 ### Projetos 
     RISC                        |   CISC

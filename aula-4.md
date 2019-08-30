@@ -117,7 +117,7 @@ Em Assembly MIPS, a instrução é
 - 2 **Shift lógico à direita** é análo ao sll. Em assembly:
 
 ```
-sll $t2, $t0, 2.
+srl $t2, $t0, 2.
 (shift right logical)
 ```
 

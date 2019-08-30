@@ -41,7 +41,7 @@ Arquitetura de Von Neumann:
         v           v           out       in
     unidade de controle  
 
-Como a interação com o hardware usando código binário é ineficiente e improdutiva, foi-se criando linguagens que se assmelham mais à linguagem humana.
+Como a interação com o hardware usando código binário é ineficiente e improdutiva, foi-se criando linguagens que se assemelham mais à linguagem humana.
 
 Todavia, as primeiras linguagens eram muito arcaicas, e se pareciam muito com as operações que o hardware era capaz de executar. As linguagens de alto nivel foram aparecendo com anos de desenvolvimento e aparecem até hoje.
 
