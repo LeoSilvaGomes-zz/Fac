@@ -29,7 +29,9 @@ $a0-$a3         |   4-7         |   Argumentos de funções
 $t0-$t7         |   8-15        |   Temporários
 $s0-$s7         |   16-23       |   Salvos
 $t8-$t9         |   24-25       |   Temporários
-$k0-$k1         |   26-27       |   Reservado ao S.O.
+$k0-$k1         | $gp             |   28          |   Ponteiro Global
+$sp             |   29          |   Ponteiro da pilha
+$fp     26-27       |   Reservado ao S.O.
 $gp             |   28          |   Ponteiro Global
 $sp             |   29          |   Ponteiro da pilha
 $fp             |   30          |   Ponteiro de frame
@@ -52,7 +54,9 @@ Assim sendo, o MIPS possui instruções de transferência de dados que recuperam
  
 Exemplo:
 
-    lw $t0, 20($a0) carrega uma palavra inteira do endereço de memória [$a0+20] no registrador $t0
+    lw $t0, 20($a0) carrega uma palavra inteira do endereço de memória [$a0+20] no r$gp             |   28          |   Ponteiro Global
+$sp             |   29          |   Ponteiro da pilha
+$fp   egistrador $t0
 
 Essas instruções utilizam um endereçamento indexado, que é feito da seguinte forma: offset(reg-base), onde
 

@@ -31,7 +31,7 @@ Cada um dos segmentos dessa representação é chamado campo.
 - O primeiro e o último caracterizam a operação add.
 - O segundo e o terceiro campus representam os operandos.
 - O quarto campo é o resgistrador que recebe o resultado.
-- O quinto campo é o deslocamento (Como é irrelecante no caso, recebeu zero).
+- O quinto campo é o deslocamento (Como é irrelevante no caso, recebeu zero).
 
 A forma geral da representação desse tipo de instruções é:
 
