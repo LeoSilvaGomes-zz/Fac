@@ -42,7 +42,7 @@ A cada etapa i da multiplicação, há i deslocamentos a esquerda de (q x M. Ao 
 Como  o produto costuma ser muito maior que os operandos, a arquitetura implementa um registrador especial de 64 bits para armazenar o produto. Note qu esse espaço costuma ser suficiente pois a multiplicação de um número de n bits por um de m bits resulta num número de n+m bits.
 
 
-### Algotitmos
+### Algoritmos
 
 Consideramos que os operandos representam números ***sem sinal***. Para realizar a multiplicação, o algoritmo mais trivial (igual fazemos no papel) é o seguinte.
 
