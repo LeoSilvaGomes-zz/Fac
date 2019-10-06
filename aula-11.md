@@ -47,7 +47,7 @@ Exemplo da aula passada: 8(decimal) * 7(decimal) = 1000(bin) * 0111(bin)
 
 ## Instruções em assembly
 
-Para fazr a multiplicação, o MIPS contém a instrução
+Para fazer a multiplicação, o MIPS contém a instrução
 
     mul reg1, reg2
 
