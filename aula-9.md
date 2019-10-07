@@ -61,12 +61,12 @@ ___
 
 Overflow na soma acontece nas seguintes operações:
 
-Operação | A | B | Resultado
-- | - |  - | -
-**A + B** | >=0 | >=0 | <0
-**A + B** | <0  | <0  |  >=0
-**A - B** | >=0 | <0  |  <0
-**A - B** | <0  | >=0 |  >=0
+| Operação | A | B | Resultado
+| - | - |  - | -
+| **A + B** | >=0 | >=0 | <0
+| **A + B** | <0  | <0  |  >=0
+| **A - B** | >=0 | <0  |  <0
+| **A - B** | <0  | >=0 |  >=0
 
 >Soma de números com sinais opostos e subtração de números com mesmo sinal **nunca** acarretam em overflow 
 
