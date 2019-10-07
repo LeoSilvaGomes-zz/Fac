@@ -13,7 +13,7 @@ Os algoritmos de multiplicação vistos lidam com números sem sinal. Para aplic
 
 Para evitar essas conversões, há um terceiro método: o algoritmo de Booth. O algoritmo de Booth adiciona um bit menos significativo ao registrados produto, e consiste nos seguintes passos:
 
-- Passo 1: Prodito[63...32] = Produto[-1] = 0
+- Passo 1: Produto[63...32] = Produto[-1] = 0
 - Passo 2: Produto[31...0] = Q.
 - Passo 3: Se Produto[0...-1] = 01, faça Produto[63...32]=Produto[63..32]+m. Senão, se o Produto[0...-1]=10, faça Produto[63...32]-=m.
 - Passo 4: Faça o **deslocamento aritmético** do registrador Produto 1 bit à direita.
