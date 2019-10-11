@@ -18,13 +18,13 @@ Quando, numa dessas operações, acontece de o resultado não caber nesse espaç
 
 ___
 ## Observações
-- 1. O nome "complemento a dois" deve-se ao fato de que um número somado ao seu negativonuma representação de *n* bits dá 2^n  
+- 1 O nome "complemento a dois" deve-se ao fato de que um número somado ao seu negativonuma representação de *n* bits dá 2^n  
         - 
-- 2. A instrução **lb** (load byte), carrega um byte (8 bits) na representação de 32 bits e replica o bit mais significativo, pois considera que o byte possui sinal.
+- 2 A instrução **lb** (load byte), carrega um byte (8 bits) na representação de 32 bits e replica o bit mais significativo, pois considera que o byte possui sinal.
         -
-- 3. Por outro lado, o **lbu** (load byte unsigned) sempre preenche os bits mais significativos com zeros, já que considera que o byte não possui sinal
+- 3 Por outro lado, o **lbu** (load byte unsigned) sempre preenche os bits mais significativos com zeros, já que considera que o byte não possui sinal
         -
-- 4. Cuidado também com as instruções **slt** e **sltu**.
+- 4 Cuidado também com as instruções **slt** e **sltu**.
         -
      > Exemplo: Suponha qye $s0 contenha 0 em todos os bits e $s1 contenha 1 em todos os bits
      >      
@@ -43,13 +43,13 @@ ___
      >
      >  sltu $t0, $s1, $s0 então $t0=0
 
-- 6. slt reg, reg1, reg2
-        -
+- 6 slt reg, reg1, reg2
+        
          reg = 0, se reg1 >= reg2
          reg = 1, se reg1 <  reg2
 
-- 5. Como negar um número emassembly MIPS? Queremos negar o $s0:
-        -
+- 5 Como negar um número emassembly MIPS? Queremos negar o $s0:
+        
         ### Maneira correta:
                 nor  $s1, $s0, $zero
                 addi $s1, s1, 1
@@ -61,12 +61,12 @@ ___
 
 Overflow na soma acontece nas seguintes operações:
 
-Operação | A | B | Resultado
-- | - |  - | -
-**A + B** | >=0 | >=0 | <0
-**A + B** | <0  | <0  |  >=0
-**A - B** | >=0 | <0  |  <0
-**A - B** | <0  | >=0 |  >=0
+| Operação | A | B | Resultado
+| - | - |  - | -
+| **A + B** | >=0 | >=0 | <0
+| **A + B** | <0  | <0  |  >=0
+| **A - B** | >=0 | <0  |  <0
+| **A - B** | <0  | >=0 |  >=0
 
 >Soma de números com sinais opostos e subtração de números com mesmo sinal **nunca** acarretam em overflow 
 
