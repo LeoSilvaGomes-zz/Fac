@@ -56,7 +56,7 @@ Há 3 tipos de hazards de pipeline:
 Hazards estruturais acontecem quando, por algum motivo estrutural da arquitetura, alguma etapa da instrução não pudesse ser executada.      
 
 A nossa implementação do caminho de dados já resolve qualquer hazard estrutural. Mas teríamos um hazard estrutural na seguinte circunstância:       
-Suponha que tivéssemos apenas uma unidade de memória do nosso caminho de dados (para acessar tanto isntruções quanto dados).    
+Suponha que tivéssemos apenas uma unidade de memória do nosso caminho de dados (para acessar tanto instruções quanto dados).    
 Suponha que no exemplo do **Slide14** tivéssemos uma quarta chamada a ***lw***. 
 Essa última não poderia ser executada no quarto ciclo de clock, pois seria necessário buscá-la na memória, que já estaria sendo ocupada pela quarta etapa da primeira ***lw***.
 
@@ -74,10 +74,10 @@ Essa técnica é chamada de **forwading** ou **bypassing**.
 
 Neste caso, teríamos
 
-> FUTURO PRINT DO DESENHO VINDO DO DOCS DA MICA
+<img src="../images/desenhofac.png">
 
 O forwading só funciona se a etapa de destino estiver a frente no tempo que o estágio de origem.    
-Por isso, nem sempreé possível resolver todos os hazards de dados com forwading.    
+Por isso, nem sempre é possível resolver todos os hazards de dados com forwading.    
 Por exemplo:    
 
     add $s0, 20($t1)
@@ -85,4 +85,4 @@ Por exemplo:
 
 O dado na lw estará disponível apenas na quarta etapa:
 
-> FUTURO PRINT DO DESENHO VINDO DO DOCS DA MICA
+<img src="../images/desenhofac2.png">
