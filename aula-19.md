@@ -74,7 +74,7 @@ Essa técnica é chamada de **forwading** ou **bypassing**.
 
 Neste caso, teríamos
 
-<img src="../images/desenhofac.png">
+<img src="./images/desenhofac.png">
 
 O forwading só funciona se a etapa de destino estiver a frente no tempo que o estágio de origem.    
 Por isso, nem sempre é possível resolver todos os hazards de dados com forwading.    
@@ -85,4 +85,4 @@ Por exemplo:
 
 O dado na lw estará disponível apenas na quarta etapa:
 
-<img src="../images/desenhofac2.png">
+<img src="./images/desenhofac2.png">
