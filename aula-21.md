@@ -34,6 +34,7 @@ O mapeamento direto conta com 3 elementos.
 - A **tag** são os bits mais significativos do endereço da memória principal e
 - O **bit de validade** marca a validade do dado presente na cache.
 
+```
      ____________________   
     | |         |        |
     | |         |        |
@@ -45,6 +46,8 @@ O mapeamento direto conta com 3 elementos.
     bit   tag      dados
     de
     validade
+    
+```
 
 No exemplo acima, a amemória principal possui 16=2⁴ bytes e a cache, 2²=4 bytes. Logo, a tag possui 2 bits e o tamanho real da cache é:
 
