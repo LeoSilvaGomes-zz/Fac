@@ -67,7 +67,7 @@ Se um processador possui um CPI de 2, sem considerar stalls de memória, e a pen
 
 ## Cache multinível
 
-O objetivo é reduzir a penalidade de falha e o tempo de acerto. Num sistema de cahce multinível:
+O objetivo é reduzir a penalidade de falha e o tempo de acerto. Num sistema de cache multinível:
 
 - a priméria possui blocos de tamanho menor, objetivando-se diminuir o **tempo de acerto**.
 - a(s) secundário(s) possuem blocos de tamanho maior, objetivando-se minimizar a taxa de falhas em detrimento do tempo de acerto.
